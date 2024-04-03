@@ -36,7 +36,8 @@
     <div class = "col-md-12" >
         <div class = "container">
             <div class = "jumbotron"><!--jumbotron-->
-                <h1><strong>Explore<br> Your Favorite Event</h1><!--jumbotron heading-->
+                <h1><strong>FESTIPAL</strong></h1><!--jumbotron heading-->
+                <h2>Manipal Festivity Navigator</h2><!--jumbotron heading-->
                 <br><div class="browse d-md-flex col-md-14" >
                 <div class="row">
                   
