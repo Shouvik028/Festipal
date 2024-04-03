@@ -14,7 +14,7 @@
         <br>
             <div class = "container" style="background-color:rgba(255, 255, 255, 0.7);border:1px solid grey; border-radius:50px;padding-bottom:30px;">
                 <div class = "col-md-12"><!--body content title holder with 12 grid columns-->
-                    <h1 style="color:#000080 ; font-size:42px ; font-style:bold "><strong>  Register your Favourite events:</strong></h1><!--body content title-->
+                    <h1 style="color:#000080 ; font-size:42px ; font-style:bold "><strong>  Register:</strong></h1><!--body content title-->
 
             </div>
             
@@ -90,16 +90,16 @@
                             <img src="images/onstage.jpg" class="img-responsive">
                         </div>
                         <div class="subcontent col-md-6"><!--Text holder with 6 column grid-->
-                            <h1 style="color:#003300 ; font-size:38px ;"><strong><u>On-Stage Events</strong></u></h1><!--title-->
+                            <h1 style="color:#003300 ; font-size:38px ;"><strong><u>Cultural Events</strong></u></h1><!--title-->
                             <p><!--content-->
-                                EMBRACE YOUR CONFIDENCE BY PARTICIPATING IN OUR DIFFERENT ON-STAGE EVENTS!
+                                EMBRACE YOUR CONFIDENCE BY PARTICIPATING IN OUR DIFFERENT CULTURAL EVENTS!
                             </p>
                             
                             <br><br>
                             <?php 
                             $id=3;
                             echo
-                             '<a class="btn btn-default" href="viewEvent.php?id='.$id .'"> <span class="glyphicon glyphicon-circle-arrow-right"></span>View On-Stage Events</a>'
+                             '<a class="btn btn-default" href="viewEvent.php?id='.$id .'"> <span class="glyphicon glyphicon-circle-arrow-right"></span>View Cultural Events</a>'
                         ?>
                         </div><!--subcontent div-->
                     </div><!--container div-->
@@ -119,9 +119,9 @@
                             <img src="images/offstage.jpg" class="img-responsive">
                         </div>
                         <div class="subcontent col-md-6"><!--Text holder with 6 column grid-->
-                            <h1 style="color:#003300 ; font-size:38px ;"><strong><u>Off-Stage Events</u></strong></h1><!--title-->
+                            <h1 style="color:#003300 ; font-size:38px ;"><strong><u>Sports Events</u></strong></h1><!--title-->
                             <p><!--content-->
-                                 EMBRACE YOUR TALENT BY PARTICIPATING IN OUR DIFFERENT OFF-STAGE EVENTS!
+                                 EMBRACE YOUR ATHELTIC SIDE BY PARTICIPATING IN OUR DIFFERENT SPORTS EVENTS!
                             </p>
                             
                             
@@ -129,7 +129,7 @@
                             <?php 
                             $id=4;
                             echo
-                             '<a class="btn btn-default" href="viewEvent.php?id='.$id .'"> <span class="glyphicon glyphicon-circle-arrow-right"></span>View Off-Stage Events</a>'
+                             '<a class="btn btn-default" href="viewEvent.php?id='.$id .'"> <span class="glyphicon glyphicon-circle-arrow-right"></span>View Sports Events</a>'
                         ?>
                         </div><!--subcontent div-->
                     </div><!--container div-->
