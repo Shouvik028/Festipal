@@ -17,10 +17,10 @@
 
                         
                         <div class="form-group">
-                            <label for="usn"> Student RegNo: </label>
+                            <label for="RegNo"> Student RegNo: </label>
                             <input type="text"
-                                   id="usn"
-                                   name="usn"
+                                   id="RegNo"
+                                   name="RegNo"
                                    class="form-control">
                         </div>
                         <button type="submit" class = "btn btn-default">Login</button>
