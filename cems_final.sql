@@ -463,12 +463,28 @@ INSERT INTO `registered` (`rid`, `RegNo`, `event_id`) VALUES
 (30, 197, 3),
 (31, 126, 4),
 (32, 131, 1),
-(33, 145, 2);
+(33, 145, 2),
+(34, 351, 1),
+(35, 365, 2),
+(36, 372, 3),
+(37, 337, 4),
+(38, 283, 1),
+(39, 315, 2),
+(40, 316, 3),
+(41, 348, 4),
+(42, 309, 1),
+(43, 346, 2),
+(44, 201, 1),
+(45, 302, 2),
+(46, 303, 3),
+(47, 204, 4),
+(48, 106, 1),
+(49, 276, 2),
+(50, 107, 3),
+(51, 298, 4),
+(52, 380, 1),
+(53, 210, 2);
 
-
---
--- Triggers `registered`
---
 DELIMITER $$
 CREATE TRIGGER `count` AFTER INSERT ON `registered` FOR EACH ROW update events
 set events.participants=events.participants+1
