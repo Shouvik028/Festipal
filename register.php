@@ -28,14 +28,8 @@
         <label>Semester:</label><br>
         <input type="text" name="sem" class="form-control" required><br><br>
 
-        <label>Email:</label><br>
-        <input type="text" name="email"  class="form-control" required ><br><br>
-
         <label>Phone:</label><br>
         <input type="text" name="phone"  class="form-control" required><br><br>
-
-        <label>College:</label><br>
-        <input type="text" name="college"  class="form-control" required><br><br>
 
         <button type="submit" name="update" required>Submit</button><br><br>
         <a href="usn.php" ><u>Already registered ?</u></a>
@@ -55,7 +49,7 @@
 
     if (isset($_POST["update"]))
     {
-        $usn=$_POST["usn"];
+        $RegNo=$_POST["RegNo"];
         $name=$_POST["name"];
         $branch=$_POST["branch"];
         $sem=$_POST["sem"];
@@ -63,11 +57,11 @@
         
 
 
-        if( !empty($usn) || !empty($name) || !empty($branch) || !empty($sem) || !empty($phone) )
+        if( !empty($RegNo) || !empty($name) || !empty($branch) || !empty($sem) || !empty($phone) )
         {
         
             include 'classes/db1.php';     
-                $INSERT="INSERT INTO participant (usn,name,branch,sem,phone) VALUES('$usn','$name','$branch',$sem','$phone')";
+                $INSERT="INSERT INTO participant (usn,name,branch,sem,phone) VALUES('$RegNo','$name','$branch',$sem','$phone')";
 
           
                 if($conn->query($INSERT)===True){
