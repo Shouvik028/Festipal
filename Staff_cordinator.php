@@ -7,15 +7,16 @@ $result = mysqli_query($conn,"SELECT * FROM staff_coordinator s ,events e where 
 
 <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>cems</title>
+        <title>Festipal</title>
         <title></title>
         <?php require 'utils/styles.php'; ?><!--css links. file found in utils folder-->
         
     </head>
 
 <body><?php include 'utils/adminHeader.php'?>
-<div class = "content">
-<div class = "container">
+<div class = "content" style="background-image:url('https://slcm.manipal.edu/assets/images/mu_1.jpg');background-size: cover;"><!--body content holder-->
+        <br>
+            <div class = "container" style="background-color:rgba(255, 255, 255, 0.7);border:1px solid grey; border-radius:50px;padding-bottom:30px;">
 <h1>Staff Co-ordinator details</h1>
 <?php
 if (mysqli_num_rows($result) > 0) {
@@ -51,7 +52,8 @@ else{
 }
 ?>
 </div>
-</div>
+<?php include 'utils/footer.php';?>
  </body>
- <?php include 'utils/footer.php';?>
+ </div>
+ 
 </html>

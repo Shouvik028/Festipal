@@ -10,8 +10,9 @@ include_once 'classes/db1.php';
 $result = mysqli_query($conn, "SELECT * FROM registered r,staff_coordinator s ,event_info ef ,student_coordinator st,events e where e.event_id= ef.event_id and e.event_id= s.event_id and e.event_id= st.event_id and r.usn= '$usn' and r.event_id=e.event_id");
 ?>
 
-<div class = "content">
-            <div class = "container">
+<div class = "content" style="background-image:url('https://slcm.manipal.edu/assets/images/mu_1.jpg');background-size: cover;"><!--body content holder-->
+<br>
+<div class = "container" style="background-color:rgba(255, 255, 255, 0.7);border:1px solid grey; border-radius:50px;padding-bottom:30px;">
             <h1> Registered Events</h1>
              <?php
 if (mysqli_num_rows($result) > 0) {
@@ -62,7 +63,7 @@ if (mysqli_num_rows($result) > 0) {
                 
                
             </div>
-        </div>
+        
         <?php
     
         // $result = mysqli_query($conn, );
@@ -119,5 +120,6 @@ if (mysqli_num_rows($result) > 0) {
                 
                
             </div>
+        </div>
         </div>
         <?php include 'utils/footer.php'; ?> 

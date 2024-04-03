@@ -9,15 +9,16 @@ $result = mysqli_query($conn,"SELECT * FROM staff_coordinator s ,event_info ef ,
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>cems</title>
+<title>Festipal</title>
 </head>
     
     <body>
 <?php include 'utils/adminHeader.php'?>
  
     
-        <div class = "content">
-            <div class = "container">
+<div class = "content" style="background-image:url('https://slcm.manipal.edu/assets/images/mu_1.jpg');background-size: cover;"><!--body content holder-->
+        <br>
+            <div class = "container" style="background-color:rgba(255, 255, 255, 0.7);border:1px solid grey; border-radius:50px;padding-bottom:30px;">
             <h1>Event details</h1>
             <?php
 if (mysqli_num_rows($result) > 0) {
@@ -74,8 +75,9 @@ if (mysqli_num_rows($result) > 0) {
 ?>             
                 <a class="btn btn-default" href = "createEventForm.php">Create Event</a><!--register button-->
             </div>
-        </div>
+
         
         <?php require 'utils/footer.php'; ?>
     </body>
+    </div>
 </html>

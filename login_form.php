@@ -4,7 +4,7 @@ include_once 'classes/db1.php';?>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>cems</title>
+        <title>Festipal</title>
         <title></title>
         <style>
             span.error{
@@ -15,9 +15,10 @@ include_once 'classes/db1.php';?>
             </head>
     <body>
         <?php require 'utils/header.php'; ?><!--header content. file found in utils folder-->
-        <div class = "content"><!--body content holder-->
-            <div class = "container">
-                <div class ="col-md-6 col-md-offset-3">
+        <div class = "content" style="background-image:url('https://slcm.manipal.edu/assets/images/mu_1.jpg');background-size: cover;"><!--body content holder-->
+        <br>
+        <div class = "container" style="background-color:rgba(255, 255, 255, 0.7);border:1px solid grey; border-radius:50px;padding-bottom:30px;">
+                <div class ="col-md-6 col-md-offset-3" style="margin-top:20px;">
                   
                     <form method="POST"><!--form-->
                       
@@ -32,9 +33,10 @@ include_once 'classes/db1.php';?>
                     </form>
                 </div><!--col md 6 div-->
             </div><!--container div-->
-        </div><!--content div-->
+        
         <?php require 'utils/footer.php'; ?><!--footer content. file found in utils folder-->
     </body>
+    </div><!--content div-->
 </html>
 <?php
 if (isset($_POST["update"]))

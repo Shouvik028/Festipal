@@ -9,7 +9,7 @@ $result = mysqli_query($conn,"SELECT * FROM events,event_info ef,student_coordin
 <html>
 <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>cems</title>
+        <title>Festipal</title>
         <title></title>
         <?php require 'utils/styles.php'; ?><!--css links. file found in utils folder-->
         
@@ -20,8 +20,9 @@ $result = mysqli_query($conn,"SELECT * FROM events,event_info ef,student_coordin
     
         <?php require 'utils/header.php'; ?><!--header content. file found in utils folder-->
        
-        <div class = "content"><!--body content holder-->
-            <div class = "container">
+        <div class = "content" style="background-image:url('https://slcm.manipal.edu/assets/images/mu_1.jpg');background-size: cover;"><!--body content holder-->
+        <br>
+        <div class = "container" style="background-color:rgba(255, 255, 255, 0.7);border:1px solid grey; border-radius:50px;padding-bottom:30px;">
                 <div class = "col-md-12"><!--body content title holder with 12 grid columns-->
                    
 
@@ -50,10 +51,11 @@ $result = mysqli_query($conn,"SELECT * FROM events,event_info ef,student_coordin
 
         
 
-        </div><!--body content div-->
-
+        
      
-        <?php require 'utils/footer.php'; ?><!--footer content. file found in utils folder-->
+
     </body>
+    </div><!--body content div-->
+    <?php require 'utils/footer.php'; ?><!--footer content. file found in utils folder-->
     
 </html>
