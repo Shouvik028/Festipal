@@ -29,7 +29,7 @@ if (mysqli_num_rows($result) > 0) {
     <th>Branch</th>
     <th>Sem</th>
     <th>Phone</th>
-    <th>College</th>
+    
     <th>Event</th>
   </tr>
 <?php
@@ -42,7 +42,7 @@ while($row = mysqli_fetch_array($result)) {
     <td><?php echo $row["branch"]; ?></td>
     <td><?php echo $row["sem"]; ?></td>
     <td><?php echo $row["phone"]; ?></td>
-    <td><?php echo $row["college"]; ?></td>
+    
     <td><?php echo $row["event_title"]; ?></td>
    
 </tr>

@@ -28,7 +28,7 @@ if (mysqli_num_rows($result) > 0) {
                         <tr>
                             
                             <th>Event_name</th>
-                            <th>No. of Participents</th>
+                            <th>No. of Participants</th>
                             <th>Price</th>
                             <th>Student Co-ordinator</th>
                             <th>Staff Co-ordinator</th>
@@ -48,7 +48,7 @@ if (mysqli_num_rows($result) > 0) {
                 
                    
                              echo '<td>' . $row['event_title'] . '</td>';                    
-                            echo '<td>' . $row['participents'] . '</td>';
+                            echo '<td>' . $row['participants'] . '</td>';
                             echo '<td>' . $row['event_price'] . '</td>';
                             echo '<td>' . $row['st_name'] . '</td>';
                             echo '<td>' . $row['name'] . '</td>';

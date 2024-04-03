@@ -59,16 +59,15 @@
         $name=$_POST["name"];
         $branch=$_POST["branch"];
         $sem=$_POST["sem"];
-        $email=$_POST["email"];
         $phone=$_POST["phone"];
-        $college=$_POST["college"];
+        
 
 
-        if( !empty($usn) || !empty($name) || !empty($branch) || !empty($sem) || !empty($email) || !empty($phone) || !empty($college) )
+        if( !empty($usn) || !empty($name) || !empty($branch) || !empty($sem) || !empty($phone) )
         {
         
             include 'classes/db1.php';     
-                $INSERT="INSERT INTO participent (usn,name,branch,sem,email,phone,college) VALUES('$usn','$name','$branch',$sem,'$email','$phone','$college')";
+                $INSERT="INSERT INTO participant (usn,name,branch,sem,phone) VALUES('$usn','$name','$branch',$sem','$phone')";
 
           
                 if($conn->query($INSERT)===True){
