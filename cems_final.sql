@@ -42,22 +42,22 @@ CREATE TABLE `events` (
 --
 
 INSERT INTO `events` (`event_id`, `event_title`, `event_price`, `participants`, `img_link`, `type_id`) VALUES
-(1, 'Cryptohunt', 100, 10, 'images/crypto.png', 1),
-(2, 'Hackathon', 100, 10, 'images/cs03.jpg', 1),
-(3, 'Tech-Quiz',100, 20, 'images/quiz.png', 1),
+(1, 'Cryptohunt', 100, 10, 'images/ch.jpg', 1),
+(2, 'Hackathon', 100, 10, 'images/ht.jpg', 1),
+(3, 'Tech-Quiz',100, 20, 'images/tc.jpg', 1),
 (4, 'Competitive-Coding', 100, 10, 'images/coding.jpg', 1),
 (5, 'Pubg', 50, 30, 'images/pubg.jpg', 2),
 (6, 'Counter-Strike', 50, 20, 'images/counter.jpg\r\n', 2),
-(7, 'Valorant', 50, 20, '', 2),
-(8, 'Fortnite', 50, 10, '', 2),
+(7, 'Valorant', 50, 20, 'images/val.jpg', 2),
+(8, 'Fortnite', 50, 10, 'images/for.jpg', 2),
 (9, 'Dance Manipal', 200, 10, 'images/dance.jpg', 3),
 (10, 'Manipal Idol', 200, 10, 'images/sing.jpg', 3),
-(11, 'Slam Poetry', 200, 10, '', 3),
-(12, 'Fashion Frenzy', 200, 10, '', 3),
-(13, 'Football', 300, 20, '', 4),
-(14, 'Cricket', 300, 20, '', 4),
-(15, 'Table Tennis', 300, 10, '', 4),
-(16, 'Swimming', 300, 10, '', 4);
+(11, 'Slam Poetry', 200, 10, 'images/sp.jpg', 3),
+(12, 'Fashion Frenzy', 200, 10, 'images/ff.jpg', 3),
+(13, 'Football', 300, 20, 'images/fb.jpg', 4),
+(14, 'Cricket', 300, 20, 'images/cr.jpg', 4),
+(15, 'Table Tennis', 300, 10, 'images/tt.jpg', 4),
+(16, 'Swimming', 300, 10, 'images/sm.jpg', 4);
 -- --------------------------------------------------------
 
 --

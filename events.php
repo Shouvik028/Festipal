@@ -9,7 +9,7 @@
                         <div class="col-md-6">
                              
 
-                          <img src=" <?php  echo $row['img_link'];?>" class="img-responsive">
+                          <img src=" <?php  echo $row['img_link'];?>" class="img-responsive" style="width: 1000px;height:300px;">
                         </div>
                         <div class="subcontent col-md-6">                        
                             <h1 style="color:#003300 ; font-size:38px ;" ><u><strong><?php echo '<td>' . $row['event_title'] . '</td>';?></strong></u></h1><!--title-->

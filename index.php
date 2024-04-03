@@ -58,7 +58,7 @@
                 <section>
                     <div class="container">
                         <div class="col-md-6"><!--image holder with 6 grid columns-->
-                            <img src="images/gaming.jpg" class="img-responsive">
+                            <img src="images/gm.jpg" class="img-responsive">
                         </div>
                         <div class="subcontent col-md-6"><!--Text holder with 6 column grid-->
                             <h1 style="color:#003300 ; font-size:38px ;"><strong><u>Gaming Events</u></strong></h1><!--title-->
@@ -116,7 +116,7 @@
                 <section>
                     <div class="container">
                         <div class="col-md-6"><!--image holder with 6 grid columns-->
-                            <img src="images/offstage.jpg" class="img-responsive">
+                            <img src="images/s.jpg" class="img-responsive">
                         </div>
                         <div class="subcontent col-md-6"><!--Text holder with 6 column grid-->
                             <h1 style="color:#003300 ; font-size:38px ;"><strong><u>Sports Events</u></strong></h1><!--title-->
