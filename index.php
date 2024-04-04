@@ -3,18 +3,25 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Festipal</title>
-        <?php require 'utils/styles.php';?>
-      
-        
-    
+        <?php require 'utils/styles.php';?>    
             </head>
+            <style>
+            .jumbotron{
+                padding-top:0px;
+                margin-top:0px;
+                text-shadow: 0px 0px;
+                padding-bottom:0px;
+                margin-bottom:0px;
+                
+            }
+        </style>
     <body>
         <?php require 'utils/header.php'; ?><!--header content. file found in utils folder-->
         <div class = "content" style="background-image:url('https://slcm.manipal.edu/assets/images/mu_1.jpg');background-size: cover;"><!--body content holder-->
         <br>
             <div class = "container" style="background-color:rgba(255, 255, 255, 0.7);border:1px solid grey; border-radius:50px;padding-bottom:30px;">
-                <div class = "col-md-12"><!--body content title holder with 12 grid columns-->
-                    <h1 style="color:#000080 ; font-size:42px ; font-style:bold "><strong>  Register:</strong></h1><!--body content title-->
+                <div class = "col-md-12 jumbotron"><!--body content title holder with 12 grid columns-->
+                    <h1 style="color:#003300  ; font-size:42px ; font-style:bold "><strong>  Register:</strong></h1><!--body content title-->
 
             </div>
             
