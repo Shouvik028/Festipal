@@ -1,15 +1,4 @@
-<?php
-session_start(); // Start the session
-
-if(isset($_SESSION['RegNo'])) {
-    // If the session variable 'loggedin' is set, destroy the session
-    session_destroy();
-    // Redirect the user to the login page after logout
-    header("Location: index.php");
-    exit; // Exit the script after redirection
-}
-?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -18,20 +7,20 @@ if(isset($_SESSION['RegNo'])) {
             </head>
             <style>
             .jumbotron{
-                padding-top:0px;
-                margin-top:0px;
-                text-shadow: 0px 0px;
-                padding-bottom:0px;
-                margin-bottom:0px;
+            
                 
             }
         </style>
     <body>
-        <?php require 'utils/header.php'; ?><!--header content. file found in utils folder-->
-        <div class="content" style="background-image:url('https://slcm.manipal.edu/assets/images/mu_1.jpg');background-size: cover;">
+        <?php require 'utils/studentheader.php'; ?><!--header content. file found in utils folder-->
+        <div class = "content" style="background-image:url('https://slcm.manipal.edu/assets/images/mu_1.jpg');background-size: cover;"><!--body content holder-->
         <br>
             <div class = "container" style="background-color:rgba(255, 255, 255, 0.7);border:1px solid grey; border-radius:50px;padding-bottom:30px;">
-                <div class = "col-md-12 jumbotron"><!--body content title holder with 12 grid columns-->
+                <div class = "col-md-12 jumbotron" style="    padding-top:0px;
+                margin-top:0px;
+                text-shadow: 0px 0px;
+                padding-bottom:0px;
+                margin-bottom:0px;"><!--body content title holder with 12 grid columns-->
                     <h1 style="color:#003300  ; font-size:42px ; font-style:bold "><strong>  Register:</strong></h1><!--body content title-->
 
             </div>
@@ -59,7 +48,7 @@ if(isset($_SESSION['RegNo'])) {
                             <br><br>
                         <?php $id=1;
                         echo
-                             '<a class="btn btn-default"  href="viewEvent.php?id='.$id.'"> <span class="glyphicon glyphicon-circle-arrow-right"></span>View Technical Events</a>'
+                             '<a class="btn btn-default"  href="rstudentviewEvents.php?id='.$id.'"> <span class="glyphicon glyphicon-circle-arrow-right"></span>View Technical Events</a>'
                         ?>
                              </div><!--subcontent div-->
                     </div><!--container div-->
@@ -88,7 +77,7 @@ if(isset($_SESSION['RegNo'])) {
                             <?php 
                             $id=2;
                             echo
-                             '<a class="btn btn-default" href="viewEvent.php?id='.$id .'"> <span class="glyphicon glyphicon-circle-arrow-right"></span>View Gaming Events</a>'
+                             '<a class="btn btn-default" href="rstudentviewEvents.php?id='.$id .'"> <span class="glyphicon glyphicon-circle-arrow-right"></span>View Gaming Events</a>'
                         ?>
                         </div><!--subcontent div-->
                     </div><!--container div-->
@@ -117,7 +106,7 @@ if(isset($_SESSION['RegNo'])) {
                             <?php 
                             $id=3;
                             echo
-                             '<a class="btn btn-default" href="viewEvent.php?id='.$id .'"> <span class="glyphicon glyphicon-circle-arrow-right"></span>View Cultural Events</a>'
+                             '<a class="btn btn-default" href="rstudentviewEvents.php?id='.$id .'"> <span class="glyphicon glyphicon-circle-arrow-right"></span>View Cultural Events</a>'
                         ?>
                         </div><!--subcontent div-->
                     </div><!--container div-->
@@ -147,7 +136,7 @@ if(isset($_SESSION['RegNo'])) {
                             <?php 
                             $id=4;
                             echo
-                             '<a class="btn btn-default" href="viewEvent.php?id='.$id .'"> <span class="glyphicon glyphicon-circle-arrow-right"></span>View Sports Events</a>'
+                             '<a class="btn btn-default" href="rstudentviewEvents.php?id='.$id .'"> <span class="glyphicon glyphicon-circle-arrow-right"></span>View Sports Events</a>'
                         ?>
                         </div><!--subcontent div-->
                     </div><!--container div-->

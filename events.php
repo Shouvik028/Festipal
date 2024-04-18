@@ -29,7 +29,7 @@
                             
                             <br><br>
                         <?php echo
-                             '<a class="btn btn-default" href="register.php"> <span class="glyphicon glyphicon-circle-arrow-right"></span>Register</a>'
+                             '<a class="btn btn-default" href="eventregister.php"> <span class="glyphicon glyphicon-circle-arrow-right"></span>Register</a>'
                             ?>
                                                         </div><!--subcontent div-->
                     </div><!--container div-->

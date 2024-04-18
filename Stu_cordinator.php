@@ -42,7 +42,7 @@ while($row = mysqli_fetch_array($result)) {
     <td><?php echo $row["st_name"]; ?></td>
     <td><?php echo $row["phone"]; ?></td>
     <td><?php echo $row["event_title"]; ?></td>
-    <td> <?php echo '<a  href="updateStudent.php?id='.$row['event_id'].'" class = "btn btn-default"> Update</a>'?></td>
+    
    
 </tr>
 <?php
